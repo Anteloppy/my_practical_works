@@ -1,0 +1,16 @@
+D:\про-31\Compile_It\bin\Debug\Compile_It.exe.config
+D:\про-31\Compile_It\bin\Debug\Compile_It.exe
+D:\про-31\Compile_It\bin\Debug\Compile_It.pdb
+D:\про-31\Compile_It\obj\Debug\Compile_It.csproj.AssemblyReference.cache
+D:\про-31\Compile_It\obj\Debug\Compile_It.csproj.SuggestedBindingRedirects.cache
+D:\про-31\Compile_It\obj\Debug\MainWindow.g.cs
+D:\про-31\Compile_It\obj\Debug\App.g.cs
+D:\про-31\Compile_It\obj\Debug\Compile_It_MarkupCompile.cache
+D:\про-31\Compile_It\obj\Debug\Compile_It_MarkupCompile.lref
+D:\про-31\Compile_It\obj\Debug\MainWindow.baml
+D:\про-31\Compile_It\obj\Debug\Compile_It.g.resources
+D:\про-31\Compile_It\obj\Debug\Compile_It.Properties.Resources.resources
+D:\про-31\Compile_It\obj\Debug\Compile_It.csproj.GenerateResource.cache
+D:\про-31\Compile_It\obj\Debug\Compile_It.csproj.CoreCompileInputs.cache
+D:\про-31\Compile_It\obj\Debug\Compile_It.exe
+D:\про-31\Compile_It\obj\Debug\Compile_It.pdb
