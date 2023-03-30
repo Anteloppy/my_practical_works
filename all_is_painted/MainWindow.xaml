@@ -1,0 +1,74 @@
+﻿<Window x:Class="all_is_painted.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:all_is_painted"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="{x:Null}">
+    <Grid Background="#505050">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="7*"/>
+            <RowDefinition Height="0.75*"/>
+            <RowDefinition Height="0.125*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Menu Panel.ZIndex="5" VerticalAlignment="Top" Height="20" Grid.Column="0" Grid.ColumnSpan="5" Grid.Row="0" Grid.RowSpan="3">
+            <MenuItem Header="Меню">
+                <MenuItem Header="Команды">
+                    <MenuItem Header="Сохранить" Click="Save_Click"/>
+                    <MenuItem Header="Очистить" Click="Clear_Click"/>
+                    <MenuItem Header="Текстовый режим" Click="Text_Click"/>
+                    <MenuItem Header="Режим выделения" Click="Lasso_Click"/>
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+        <InkCanvas Panel.ZIndex="0" x:Name="inkCanvas1" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="0" Margin="0,20,0,0"/>
+        <Button HorizontalAlignment="Right" VerticalAlignment="Bottom" BorderBrush="White" BorderThickness="1" Width="40" Height="40" Click="Clear_Click" Grid.Row="1" Grid.Column="3" FontSize="15">
+            <Button.Background>
+                <ImageBrush ImageSource="/clean.png"/>
+            </Button.Background>
+        </Button>
+        <Button Grid.Column="1"  Width="40" Height="40" Grid.ColumnSpan="2" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Bottom" FontSize="15" Click="Save_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/floppy.png"/>
+            </Button.Background>
+        </Button>
+        <Button Grid.Column="2" Grid.Row="1"  Width="40" Height="40" FontSize="15" HorizontalAlignment="Right" VerticalAlignment="Bottom" Click="Lasso_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/lasso.png"/>
+            </Button.Background>
+        </Button>
+        <Button Grid.Column="2" Grid.Row="1" Width="40" Height="40" FontSize="15" HorizontalAlignment="Right" VerticalAlignment="Bottom" Click="Text_Click" Margin="0,0,45,0">
+            <Button.Background>
+                <ImageBrush ImageSource="/text.png"/>
+            </Button.Background>
+        </Button>
+        <StackPanel Panel.ZIndex="0" Grid.Column="2" Grid.Row="1" VerticalAlignment="Center" Grid.RowSpan="2">
+            <Slider x:Name="sld_RedColor" Background="Red" Minimum="0" Maximum="255" HorizontalAlignment="Left" Width="256" Height="15" ValueChanged="sld_Color_ValueChanged" Panel.ZIndex="1"/>
+            <Slider x:Name="sld_GreenColor" Background="Green" Minimum="0" Maximum="255" HorizontalAlignment="Left" Height="15" Width="256" ValueChanged="sld_Color_ValueChanged" Panel.ZIndex="1"/>
+            <Slider x:Name="sld_BlueColor" Background="Blue" Minimum="0" Maximum="255" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="15" Width="256" ValueChanged="sld_Color_ValueChanged" Panel.ZIndex="1" Grid.Row="1" Grid.Column="2"/>
+        </StackPanel>
+        <Label x:Name="lbl1" Content="Цвет" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2" Grid.Row="1" Margin="0,0,75,0"/>
+        <WrapPanel Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center" Margin="140,0,0,0" Width="160" Height="20">
+            <Button x:Name="Red" Background="#FF0000" MinHeight="20" MinWidth="20" Click="Red_Click"/>
+            <Button x:Name="Green" Background="#00FF00" MinHeight="20" MinWidth="20" Click="Green_Click"/>
+            <Button x:Name="Blue" Background="#0000FF" MinHeight="20" MinWidth="20" Click="Blue_Click"/>
+            <Button x:Name="White" Background="#FFFFFF" MinHeight="20" MinWidth="20" Click="White_Click"/>
+            <Button x:Name="Black" Background="#000000" MinHeight="20" MinWidth="20" Click="Black_Click"/>
+            <Button x:Name="Cian" Background="#00FFFF" MinHeight="20" MinWidth="20" Click="Cian_Click"/>
+            <Button x:Name="Yellow" Background="#FFFF00" MinHeight="20" MinWidth="20" Click="Yellow_Click"/>
+            <Button x:Name="Pink" Background="#FF00FF" MinHeight="20" MinWidth="20" Click="Pink_Click"/>
+        </WrapPanel>
+        <WrapPanel Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center" Margin="390,0,0,0" VerticalAlignment="Center" Orientation="Vertical">
+            <RadioButton Content="5px" Click="Fivepx_Click"/>
+            <RadioButton Content="10px" Click="Tenpx_Click"/>
+        </WrapPanel>
+    </Grid>
+</Window>
