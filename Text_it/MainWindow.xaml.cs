@@ -80,5 +80,29 @@ namespace Text_it
             if (par.LineHeight == 1) { }
             else par.LineHeight--;
         }
+        private void BlackText(object sender, RoutedEventArgs e)
+        {
+            TextSelection selectedText = rtb.Selection;
+            if (selectedText != null && !selectedText.IsEmpty)
+            { selectedText.ApplyPropertyValue(TextElement.ForegroundProperty, Brushes.Black); }
+        }
+        private void RedText(object sender, RoutedEventArgs e)
+        {
+            TextSelection selectedText = rtb.Selection;
+            if (selectedText != null && !selectedText.IsEmpty)
+            { selectedText.ApplyPropertyValue(TextElement.ForegroundProperty, Brushes.Red); }
+        }
+        private void GreenText(object sender, RoutedEventArgs e)
+        {
+            TextSelection selectedText = rtb.Selection;
+            if (selectedText != null && !selectedText.IsEmpty)
+            { selectedText.ApplyPropertyValue(TextElement.ForegroundProperty, Brushes.LawnGreen); }
+        }
+        private void BlueText(object sender, RoutedEventArgs e)
+        {
+            TextSelection selectedText = rtb.Selection;
+            if (selectedText != null && !selectedText.IsEmpty)
+            { selectedText.ApplyPropertyValue(TextElement.ForegroundProperty, Brushes.Blue); }
+        }
     }
 }

@@ -25,32 +25,37 @@
             </Menu>
         <StackPanel>
             <ToolBar VerticalAlignment="Top">
-                    <Button Command="ApplicationCommands.Open" BorderThickness="0">
+                    <Button Command="ApplicationCommands.Open" BorderThickness="0" ToolTip="Open">
                         <Image Source="/folder.png" Width="21" Height="21"/>
                     </Button>
-                    <Button Command="ApplicationCommands.Save" BorderThickness="0">
+                    <Button Command="ApplicationCommands.Save" BorderThickness="0" ToolTip="Save">
                         <Image Source="/floppy.png" Width="20" Height="20"/>
                     </Button>
                     <Separator/>
-                    <ToggleButton IsEnabled="True"  Command="EditingCommands.ToggleBold" x:Name="bBold" BorderThickness="0">
+                    <ToggleButton IsEnabled="True"  Command="EditingCommands.ToggleBold" x:Name="bBold" BorderThickness="0" ToolTip="Bold">
                         <Image Source="/bold.png" Width="16" Height="16"/>
                     </ToggleButton>
-                    <ToggleButton IsEnabled="True"  Command="EditingCommands.ToggleItalic" x:Name="bItalic" BorderBrush="Transparent">
+                    <ToggleButton IsEnabled="True"  Command="EditingCommands.ToggleItalic" x:Name="bItalic" BorderBrush="Transparent" ToolTip="italic">
                         <Image Source="/italic.png" Width="16" Height="16"/>
                     </ToggleButton>
-                    <ToggleButton IsEnabled="True" Command="EditingCommands.ToggleUnderline" x:Name="bUnderline" BorderBrush="Transparent">
+                    <ToggleButton IsEnabled="True" Command="EditingCommands.ToggleUnderline" x:Name="bUnderline" BorderBrush="Transparent" ToolTip="Underline">
                         <Image Source="/underline.png" Width="16" Height="16"/>
                     </ToggleButton>
                     <Separator/>
                     <ComboBox Name="cmbFontFamily" Width="150" SelectionChanged="cmbFontFamily_SelectionChanged" />
                     <ComboBox Name="cmbFontSize" Width="50" IsEditable="True" TextBoxBase.TextChanged="cmbFontSize_TextChanged"/>
                     <Separator/>
-                    <Button x:Name="bLineSpacing" Click="Line_Spacing" Width="20" Height="20">
+                    <Button x:Name="bLineSpacing" Click="Line_Spacing" Width="20" Height="20" ToolTip="LineSpacing+">
                         <Image Source="/line_spacing.png"/>
                     </Button>
-                    <Button x:Name="bDoesntLineSpacing" Click="Line_Doesnt_Spacing" Width="20" Height="20">
+                    <Button x:Name="bDoesntLineSpacing" Click="Line_Doesnt_Spacing" Width="20" Height="20" ToolTip="LineSpacing-">
                         <Image Source="/line_doesnt_spacing.png"/>
                     </Button>
+                    <Separator/>
+                    <Button x:Name="Black" Height="15" Width="15" Background="Black" ToolTip="Black" Click="BlackText"/>
+                    <Button x:Name="Red" Height="15" Width="15" Background="Red" ToolTip="Red" Click="RedText"/>
+                    <Button x:Name="Green" Height="15" Width="15" Background="LawnGreen" ToolTip="Green" Click="GreenText"/>
+                    <Button x:Name="Blue" Height="15" Width="15" Background="Blue" ToolTip="Blue" Click="BlueText"/>
                 </ToolBar>
             <RichTextBox x:Name="rtb" SelectionChanged="rtb_SelectionChanged">
             <FlowDocument x:Name="par" LineHeight="1">
