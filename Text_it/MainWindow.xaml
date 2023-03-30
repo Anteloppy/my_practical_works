@@ -1,0 +1,65 @@
+﻿<Window x:Class="Text_it.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Text_it"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="500">
+    <Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.Open" Executed="Open_Executed" />
+        <CommandBinding Command="ApplicationCommands.Save" Executed="Save_Executed" />
+    </Window.CommandBindings>
+    <Grid>
+        <StackPanel>
+        <Menu>
+            <MenuItem Header="File">
+                <MenuItem Header="Save" Click="Save_Executed"/>
+                <MenuItem Header="Open" Click="Open_Executed"/>
+        </MenuItem>
+            <MenuItem Header="Edit">
+                <MenuItem Header="Bold" Command="EditingCommands.ToggleBold"/>
+                <MenuItem Header="Italic" Command="EditingCommands.ToggleItalic"/>
+                <MenuItem Header="Underline"  Command="EditingCommands.ToggleUnderline"/>
+                </MenuItem>
+            </Menu>
+        <StackPanel>
+            <ToolBar VerticalAlignment="Top">
+                    <Button Command="ApplicationCommands.Open" BorderThickness="0">
+                        <Image Source="/folder.png" Width="21" Height="21"/>
+                    </Button>
+                    <Button Command="ApplicationCommands.Save" BorderThickness="0">
+                        <Image Source="/floppy.png" Width="20" Height="20"/>
+                    </Button>
+                    <Separator/>
+                    <ToggleButton IsEnabled="True"  Command="EditingCommands.ToggleBold" x:Name="bBold" BorderThickness="0">
+                        <Image Source="/bold.png" Width="16" Height="16"/>
+                    </ToggleButton>
+                    <ToggleButton IsEnabled="True"  Command="EditingCommands.ToggleItalic" x:Name="bItalic" BorderBrush="Transparent">
+                        <Image Source="/italic.png" Width="16" Height="16"/>
+                    </ToggleButton>
+                    <ToggleButton IsEnabled="True" Command="EditingCommands.ToggleUnderline" x:Name="bUnderline" BorderBrush="Transparent">
+                        <Image Source="/underline.png" Width="16" Height="16"/>
+                    </ToggleButton>
+                    <Separator/>
+                    <ComboBox Name="cmbFontFamily" Width="150" SelectionChanged="cmbFontFamily_SelectionChanged" />
+                    <ComboBox Name="cmbFontSize" Width="50" IsEditable="True" TextBoxBase.TextChanged="cmbFontSize_TextChanged"/>
+                    <Separator/>
+                    <Button x:Name="bLineSpacing" Click="Line_Spacing" Width="20" Height="20">
+                        <Image Source="/line_spacing.png"/>
+                    </Button>
+                    <Button x:Name="bDoesntLineSpacing" Click="Line_Doesnt_Spacing" Width="20" Height="20">
+                        <Image Source="/line_doesnt_spacing.png"/>
+                    </Button>
+                </ToolBar>
+            <RichTextBox x:Name="rtb" SelectionChanged="rtb_SelectionChanged">
+            <FlowDocument x:Name="par" LineHeight="1">
+                <Paragraph>
+                    Здесь могла быть ваша реклама :р
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

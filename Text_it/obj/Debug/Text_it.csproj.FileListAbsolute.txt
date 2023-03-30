@@ -1,0 +1,16 @@
+C:\Users\Anteloppy\Desktop\Text_it\obj\Debug\Text_it.csproj.AssemblyReference.cache
+C:\Users\Anteloppy\Desktop\Text_it\obj\Debug\Text_it.csproj.SuggestedBindingRedirects.cache
+C:\Users\Anteloppy\Desktop\Text_it\obj\Debug\MainWindow.g.cs
+C:\Users\Anteloppy\Desktop\Text_it\obj\Debug\App.g.cs
+C:\Users\Anteloppy\Desktop\Text_it\obj\Debug\Text_it_MarkupCompile.cache
+C:\Users\Anteloppy\Desktop\Text_it\obj\Debug\Text_it_MarkupCompile.lref
+C:\Users\Anteloppy\Desktop\Text_it\bin\Debug\Text_it.exe.config
+C:\Users\Anteloppy\Desktop\Text_it\bin\Debug\Text_it.exe
+C:\Users\Anteloppy\Desktop\Text_it\bin\Debug\Text_it.pdb
+C:\Users\Anteloppy\Desktop\Text_it\obj\Debug\MainWindow.baml
+C:\Users\Anteloppy\Desktop\Text_it\obj\Debug\Text_it.g.resources
+C:\Users\Anteloppy\Desktop\Text_it\obj\Debug\Text_it.Properties.Resources.resources
+C:\Users\Anteloppy\Desktop\Text_it\obj\Debug\Text_it.csproj.GenerateResource.cache
+C:\Users\Anteloppy\Desktop\Text_it\obj\Debug\Text_it.csproj.CoreCompileInputs.cache
+C:\Users\Anteloppy\Desktop\Text_it\obj\Debug\Text_it.exe
+C:\Users\Anteloppy\Desktop\Text_it\obj\Debug\Text_it.pdb
