@@ -1,0 +1,11 @@
+C:\Users\Anteloppy\Desktop\Pr2-master\bin\Debug\Pr2.exe.config
+C:\Users\Anteloppy\Desktop\Pr2-master\bin\Debug\Pr2.exe
+C:\Users\Anteloppy\Desktop\Pr2-master\bin\Debug\Pr2.pdb
+C:\Users\Anteloppy\Desktop\Pr2-master\obj\Debug\Pr2.csproj.AssemblyReference.cache
+C:\Users\Anteloppy\Desktop\Pr2-master\obj\Debug\Pr2.csproj.SuggestedBindingRedirects.cache
+C:\Users\Anteloppy\Desktop\Pr2-master\obj\Debug\Pr2.Form1.resources
+C:\Users\Anteloppy\Desktop\Pr2-master\obj\Debug\Pr2.Properties.Resources.resources
+C:\Users\Anteloppy\Desktop\Pr2-master\obj\Debug\Pr2.csproj.GenerateResource.cache
+C:\Users\Anteloppy\Desktop\Pr2-master\obj\Debug\Pr2.csproj.CoreCompileInputs.cache
+C:\Users\Anteloppy\Desktop\Pr2-master\obj\Debug\Pr2.exe
+C:\Users\Anteloppy\Desktop\Pr2-master\obj\Debug\Pr2.pdb
